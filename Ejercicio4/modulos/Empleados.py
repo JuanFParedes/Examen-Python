@@ -1,6 +1,6 @@
 from tabulate import tabulate
 from modulos.corefiles import ClearScreen, UpdateFile
-from modulos.mainMenu import mainMenu
+
 
 def Posicion():
     ClearScreen()
@@ -29,7 +29,6 @@ def AñadirEmpleado(data:dict):
         id = int(input("Ingrese el id que se le asignara al empleado: "))
         if str(id) in data.keys():
             input("El id ya esta registrado")
-            mainMenu()
         Nombre = str(input("Ingrese el nombre completo del trabajador: ")).capitalize()
         PrimerNombre = Nombre.split(" ")[0]
         Cargo = Posicion()

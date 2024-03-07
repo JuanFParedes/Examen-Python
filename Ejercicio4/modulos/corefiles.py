@@ -10,9 +10,9 @@ def CheckFile():
         pass
     else:
         os.system("mkdir Ejercicio4/data/")
-        with open("Ejercicio4/data/Empleados.json", "w+") as file:
+        with open("Ejercicio4/data/Empleados.json", "w") as file:
             json.dump({}, file, indent=4)
-        with open("Ejercicio4/data/Pagos.json", "w+") as file:
+        with open("Ejercicio4/data/Pagos.json", "w") as file:
             json.dump({}, file, indent=4)
 
 def LoadFile(Archivo:str):
